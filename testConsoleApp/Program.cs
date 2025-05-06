@@ -81,14 +81,25 @@ literal"; // Declare and initialize a multiline string literal
                 break; // Exit the switch statement
         }
 
-        Test(); // Call the Test method to demonstrate functionality
+        //Test(); // Call the Test method to demonstrate functionality
 
-        var esercizioTest = new EsercizioTest(); // Create an instance of Class1  
-        esercizioTest.WriteStoCazzo(); // Call the WriteStoCazzo method from the Esercizio1 class var
-        EsercizioTest.WriteStiCazzi(); // Call the static WriteStiCazzi method from the Esercizio1 class
+        //var esercizioTest = new EsercizioTest(); // Create an instance of Class1  
+        //esercizioTest.WriteStoCazzo(); // Call the WriteStoCazzo method from the Esercizio1 class var
+        //EsercizioTest.WriteStiCazzi(); // Call the static WriteStiCazzi method from the Esercizio1 class
 
-        var fizzBuzz = new Esercizio1(); // Create an instance of Esercizio1
-        fizzBuzz.FizzBuzz(); // Call the FizzBuzz method from the Esercizio1 class
+        //var fizzBuzz = new Esercizio1(); // Create an instance of Esercizio1
+        //fizzBuzz.FizzBuzz(); // Call the FizzBuzz method from the Esercizio1 class
+
+        //var guessNumber = new Esercizio2(); // Create an instance of Esercizio2
+        //guessNumber.GuessTheNumber(); // Call the GuessTheNumber method from the Esercizio2 class
+
+        //for (int i=0; i < args.Length; i++)
+        //{ // Start a for loop that iterates over the command line arguments
+        //    Console.WriteLine(args[i]); // Output each command line argument to the console
+        //}
+
+        var countWords = new Esercizio3(); // Create an instance of Esercizio3
+        countWords.countWords(args); // Call the countWords method from the Esercizio3 class with command line arguments
     }
     private static void Test()
     {       
