@@ -15,7 +15,7 @@ namespace testConsoleApp
             string text = args[0];
             string wordToCount = args[1];
             int count = 0;
-            string[] words = text.Split(new char[] { ' ', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] words = text.Split(' ');
             foreach (string word in words)
             {
                 if (word.Equals(wordToCount, StringComparison.OrdinalIgnoreCase))
@@ -23,7 +23,7 @@ namespace testConsoleApp
                     count++;
                 }
             }
-            Console.WriteLine($"La parola '{wordToCount}' appare {count} volte nel testo.");
+            Console.WriteLine($"La parola '{wordToCount}' appare {(count == 1 ? "una" : count)} volt{(count == 1 ? "a" : "e")} nel testo.");
         }
 
     }
