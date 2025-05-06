@@ -10,7 +10,7 @@ namespace testConsoleApp
     {
         public void FizzBuzz()
         {
-            for (int i = 0; i <= 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 if (i % 7 == 0 && IsPerfectSquare(i))
                 {
@@ -36,9 +36,10 @@ namespace testConsoleApp
             {
                 return false;
             }
-
+            
             double sqrt = Math.Floor(Math.Sqrt(number));
             return sqrt * sqrt == number;
+            // return Math.Sqrt(number) % 1 == 0;
         }
 
     }
