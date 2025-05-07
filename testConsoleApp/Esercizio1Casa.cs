@@ -24,7 +24,7 @@ namespace testConsoleApp
                 {
                     int totalWords = words.Length;
                     int totalCharacters = text.Length;
-                    string vowels = "aeiouAEIOU";
+                    string vowels = "aeiouAEIOUàèéìòùÀÈÉÌÒÙ";
                     int totalVowels = text.Count(c => vowels.Contains(c));
                     int totalConsonants = text.Count(c => char.IsLetter(c) && !vowels.Contains(c));
 
