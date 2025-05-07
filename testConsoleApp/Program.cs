@@ -102,8 +102,8 @@ internal class Program
         //countWords.countWords(args); // Call the countWords method from the Esercizio3 class with command line arguments
 
         var countWordsCasa = new Esercizio1Casa(); // Create an instance of Esercizio1Casa
-        countWordsCasa.CountInFile("C:\\Users\\Allievo\\Desktop\\lorenzopuppo-fullstack\\dotnet\\testConsoleApp\\testConsoleApp\\coglione.txt", "coglione"); 
-
+        countWordsCasa.CountInFile("C:\\Users\\Allievo\\Desktop\\lorenzopuppo-fullstack\\dotnet\\testConsoleApp\\testConsoleApp\\coglione.txt", "coglione");
+        countWordsCasa.CountInFile("C:\\Users\\Allievo\\Desktop\\lorenzopuppo-fullstack\\dotnet\\testConsoleApp\\testConsoleApp\\coglione.txt");
     }
     private static void Test()
     {       
