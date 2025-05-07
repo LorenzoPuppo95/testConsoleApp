@@ -18,14 +18,15 @@ namespace testConsoleApp
             try
             {
                 string text = File.ReadAllText(filePath);
-                string[] words = text.Split(new char[] { ' ', '?', '!', ',', ':', ';', '"', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] words = text.Split(new char[] { ' ', '?', '!', ',', ':', ';', '"', '.', '\'', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
                 if (string.IsNullOrEmpty(wordToCount))
                 {
                     int totalWords = words.Length;
                     int totalCharacters = text.Length;
-                    int totalVowels = text.Count(c => "aeiouAEIOU".Contains(c));
-                    int totalConsonants = text.Count(c => char.IsLetter(c) && !"aeiouAEIOU".Contains(c));
+                    string vowels = "aeiouAEIOU";
+                    int totalVowels = text.Count(c => vowels.Contains(c));
+                    int totalConsonants = text.Count(c => char.IsLetter(c) && !vowels.Contains(c));
 
                     Console.WriteLine($"Il file contiene:");
                     Console.WriteLine($"- {totalWords} parole");
