@@ -98,8 +98,12 @@ internal class Program
         //    Console.WriteLine(args[i]); // Output each command line argument to the console
         //}
 
-        var countWords = new Esercizio3(); // Create an instance of Esercizio3
-        countWords.countWords(args); // Call the countWords method from the Esercizio3 class with command line arguments
+        //var countWords = new Esercizio3(); // Create an instance of Esercizio3
+        //countWords.countWords(args); // Call the countWords method from the Esercizio3 class with command line arguments
+
+        var countWordsCasa = new Esercizio1Casa(); // Create an instance of Esercizio1Casa
+        countWordsCasa.CountInFile("C:\\Users\\Allievo\\Desktop\\lorenzopuppo-fullstack\\dotnet\\testConsoleApp\\testConsoleApp\\coglione.txt", "coglione"); 
+
     }
     private static void Test()
     {       

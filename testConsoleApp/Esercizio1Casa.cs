@@ -35,7 +35,6 @@ namespace testConsoleApp
                 }
                 else
                 {
-                    // Count occurrences of the specific word
                     int count = words.Count(word => word.Equals(wordToCount, StringComparison.OrdinalIgnoreCase));
                     Console.WriteLine($"La parola '{wordToCount}' appare {(count == 1 ? "una" : count)} volt{(count == 1 ? "a" : "e")} nel testo.");
                 }
